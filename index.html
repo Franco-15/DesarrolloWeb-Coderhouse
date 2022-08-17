@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Agrego Animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <title>BILLKS COFFEE</title>
@@ -11,7 +14,7 @@
 <body class="bodyIndex">
     <header id="header" class="hIndex">
         <h1 class="titulo">BILLKS COFFEE</h1>
-        <nav class="menuNavegacion">
+        <nav class="menuNavegacion animacion" data-aos="zoom-in">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="html/menu.html">Menu</a></li>
@@ -30,7 +33,7 @@
                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo voluptates aliquam doloribus at quibusdam ipsam ea illum ab dicta dolor minima, iure, autem fuga sed velit aperiam earum ex dolorum?
                 </p>
             </div>
-            <div class="imagenSobreNosotros">
+            <div class="imagenSobreNosotros"  data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
                 <img src="img/SobreNosotros.png" alt="Cafe pet friendly">
             </div>
         </section>
@@ -39,15 +42,15 @@
             <h2>Los recomendados de la casa</h2>
             <div class="r1">
                 <h3>Cheesecake</h3>
-                <img src="img/Cheesecake.png" alt="Cheesecake">
+                <img  data-aos="flip-left" data-aos-offset="175" src="img/Cheesecake.png" alt="Cheesecake">
             </div>
-            <div class="r2">
+            <div class="r2" >
                 <h3>Lemon Pie</h3>
-                <img src="img/torta-lemon-pie.jpg" alt="Lemon Pie">            
+                <img data-aos="flip-right" data-aos-offset="175" src="img/torta-lemon-pie.jpg" alt="Lemon Pie">            
             </div>
             <div class="r3">
                 <h3>Torta Oreo</h3>
-                <img src="img/tortas-Torta-Oreo-2.jpg" alt="Torta Oreo"> 
+                <img data-aos="flip-left" data-aos-offset="175" src="img/tortas-Torta-Oreo-2.jpg" alt="Torta Oreo"> 
             </div>
         </section>
     </main>
@@ -80,5 +83,12 @@
             </div>
         </div>
     </footer>
+
+    <!-- SCRIPT ANIMACIONES -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!----------------------->
 </body>
 </html>

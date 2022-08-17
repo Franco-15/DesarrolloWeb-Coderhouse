@@ -55,16 +55,25 @@
     background-image: url(../img/fondo.jpg);
 }
 
+.menuNavegacion{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
 .menuNavegacion li{
     list-style-type: none;
     display: inline-block;
-    border: solid 5px #5EB0B0;
-    padding: 5px 10px 5px 10px;
+    padding: 10px 15px 10px 15px;
     margin: 10px 10px 10px 10px;
     background-color:#5EB0B0;
+
 }
 
 .menuNavegacion li a{
+    text-align: center;
     color: #000;   
 }
 
@@ -585,3 +594,16 @@ a{
     align-items: flex-start;
 }
 
+
+/***********************************************************/
+/*                       ANIMACIONES                       */
+/***********************************************************/
+
+.animacion li{
+    transition: all;
+}
+
+.animacion li:hover{
+    background-color: #b6a598;
+    opacity: 90%;
+}
