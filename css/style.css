@@ -21,66 +21,34 @@
 /*                       HEADER                            */
 /***********************************************************/
 #header{
-    background-repeat: none;
-    background-size: cover;
-    height: 300px;
-    grid-area: header;
-    
+    height: 500px;
+    background-color: black;
     /* FLEX */
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column-reverse;
 }
 
-.hIndex{
-    background-image: url(../img/fondo.jpg);
-    background-position: center;
+.carouselHeader img{
+    height: 400px;
+    object-fit: cover;
 }
 
-.hContacto{
-    background-image: url(../img/fondo.jpg);
-}
-
-.hGaleria{
-    background-image: url(../img/fondo.jpg);
-}
-
-.hMenu{
-    background-image: url(../img/headerMenu.jpg);
-    background-position: top right; 
-}
-
-.hTienda{
-    background-image: url(../img/fondo.jpg);
-}
-
-.menuNavegacion{
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-}
 
 .menuNavegacion li{
-    list-style-type: none;
-    display: inline-block;
-    padding: 10px 15px 10px 15px;
-    margin: 10px 10px 10px 10px;
-    background-color:#5EB0B0;
-
+    margin: 10px 15px 10px 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
 }
 
-.menuNavegacion li a{
-    text-align: center;
-    color: #000;   
+
+.botonHamburguesa{
+    block-size: 50px;
 }
 
 .titulo{
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 30px;
     color: #5EB0B0;
     border: solid 5px #5EB0B0;
     background-color: #563d18e2;
@@ -97,22 +65,15 @@
 /*                       INDEX                             */
 /***********************************************************/
 
-.bodyIndex{
+.bodyIndex{ 
     background-color: #b6a598;
-    display: grid;
-    grid-template-areas:
-    "header"
-    "sobreNosotros"
-    "sobreNosotros"
-    "footer";
-
+    margin: 0;
+    padding: 0;
 }
 
 /*===========SOBRE NOSOTROS=============*/
 .sobreNosotros {
-    
-    grid-area: sobreNosotros;
-    
+    width: 100%;
     margin-top: 100px;
     margin-bottom: 100px;
     background-color: #5EB0B0;
@@ -121,7 +82,7 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .sobreNosotros .textoSobreNosotros{
@@ -135,7 +96,7 @@
     /*====== FLEXBOX ====== */
     display: flex;
     flex-flow: column nowrap;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-items: center;
 
 }
@@ -149,13 +110,10 @@
 .sobreNosotros .textoSobreNosotros h2{
   font-size: 2.2rem;
   margin-top: 20px;
-  padding: 10px 10px 10px 10px;
 }
 
 .sobreNosotros .imagenSobreNosotros{
-    height:auto ;
     width: 50%;
-    margin-right: 50px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -172,24 +130,21 @@ a{
 /*=================== RECOMENDADOS ==========================*/
 
 .recomendados{
-    grid-area: recomendados;
-    
-    width: auto;
-    height: 1000px;
-    
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #5EB0B0;
     margin-top: 100px;
     margin-bottom: 100px;
-    background-color: #5EB0B0;
 
     /* FLEXBOX */
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column;
     justify-content:center;
 }
 
 .recomendados h2{
-  font-size: 2.2rem;
-  padding: 10px 10px 10px 10px;
+    font-variant: small-caps;
+    font-size: 2.2rem;
+    padding: 10px 10px 10px 10px;
 }
 
 .r1{
@@ -295,8 +250,7 @@ a{
     margin: 10px 10px 10px 10px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;   
+    justify-content: flex-end; 
 }
 
 .seguinos img{
@@ -310,12 +264,10 @@ a{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-end;
 }
 
 .filaDos p{
     margin-left: 10px;
-    font-size: 1rem;
 }
 
 .logosTarjetas{
@@ -340,11 +292,6 @@ a{
 .bodyContacto{
 
     background-color: #c2bab4;
-    display: grid;
-    grid-template-areas:
-    "header"
-    "contactoPrincipal"
-    "footer";
 }
 
 .contactosPrincipal{
@@ -353,8 +300,6 @@ a{
     margin-bottom: 50px;
     margin-left: 10px;
     margin-right: 10px;
-
-    grid-area: contactoPrincipal;
 
     display: flex;
     flex-direction: row;
@@ -428,98 +373,8 @@ a{
     justify-content: space-between;
 }
 
-@media (max-width:900px){
-    
-    /*INDEX*/
-    
-    .sobreNosotros{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;  
-        align-items: center; 
-    }
-
-    /*CONTACTO*/
-    .contactosPrincipal{        
-        display: flex;
-        flex-flow: row wrap;
-    }
-
-    #id-contacto{
-        width: 90%;
-        margin: 20px 0px 20px 0px;
-    }
-
-    .infoContacto{
-        width: 90%;
-    }
-
-    .infoContacto iframe{
-        width: 90%;
-    }
-
-    .boton{
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .menuNavegacion{
-        display: none;
-    }
-
-
-
-   .filaUno{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-   }
-
-   .filaDos{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-   }
-
-   .logoDireccion{
-        margin-top:10px;
-        margin-bottom: 10px;
-
-        display: flex;
-        align-items: center;
-
-    }
-
-   .filaDos p{
-    margin-top:10px;
-    margin-bottom: 10px;
-   }
-
-}
-
-@media (max-width:375px){
-    
-    .contactosPrincipal{        
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
-    }
-
-    form {
-        width: 90%;
-    }
-
-    .boton{
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-
-}
-
 /***********************************************************/
 /***********************************************************/
-
 
 /***********************************************************/
 /*                       PAGINA MENU                       */
@@ -593,6 +448,137 @@ a{
     justify-content: space-between;
     align-items: flex-start;
 }
+
+/***********************************************************/
+/***********************************************************/
+
+/***********************************************************/
+/*                       MEDIA QUERIE                      */
+/***********************************************************/
+
+/* Tablets */
+@media (max-width:900px){
+    
+    /*INDEX*/
+    .bodyIndex{
+        margin: 0;
+        padding: 0;
+    }
+
+    
+    .sobreNosotros{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sobreNosotros .textoSobreNosotros{
+        width: 100%;    
+    }
+            
+    .sobreNosotros .imagenSobreNosotros{
+        margin: 10px 0px 10px 0px;
+    }
+
+    .recomendados{
+        background-color: rgb(173, 202, 196);
+        text-align: center;
+    }
+    
+    .recomendados h2{
+        background-color: #5EB0B0;
+        width: 100%;
+    }
+
+    .r1{
+        flex-direction: column;
+    }
+    
+    .r1 h3{
+        width: 100%;
+        margin-top: 25px;
+    }
+    
+    .r2{
+        flex-direction: column;
+    }
+    
+    .r2 h3{
+        background-color: #5EB0B0;
+        width: 100%;
+        margin-top: 25px;
+    }
+    
+    
+    .r3{
+        flex-direction: column;
+    }
+    
+    .r3 h3{
+        width: 100%;
+        margin-top: 25px;
+    }
+    
+    .recomendados img{
+        margin: 30px 30px 30px 30px;
+        height: 250px;
+        width: 400px;
+    }
+    
+    .recomendados h3{
+        font-size: 2rem;
+    }
+
+    /*CONTACTO*/
+    .contactosPrincipal{        
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    #id-contacto{
+        width: 90%;
+        margin: 20px 0px 20px 0px;
+    }
+
+    .infoContacto{
+        width: 90%;
+    }
+
+    .infoContacto iframe{
+        width: 90%;
+    }
+
+    .boton{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width:700px){
+
+    /* HEADER */
+    
+    .filaUno{
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .filaDos{
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+/***********************************************************/
+/***********************************************************/
+
+
 
 
 /***********************************************************/
