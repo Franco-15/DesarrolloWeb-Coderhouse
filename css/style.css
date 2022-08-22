@@ -21,7 +21,6 @@
 /*                       HEADER                            */
 /***********************************************************/
 #header{
-    height: 500px;
     background-color: black;
     /* FLEX */
     display: flex;
@@ -76,47 +75,51 @@
     width: 100%;
     margin-top: 100px;
     margin-bottom: 100px;
+
     background-color: #5EB0B0;
 
     /* FLEXBOX */
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
-    align-items: center;
 }
 
-.sobreNosotros .textoSobreNosotros{
-
-    height: auto ;
-    width: 50%;
-    grid-area: textoSobreNosotros;
-    margin-left: 50px;
-
-
+.textoSobreNosotros{
+    width: 100%;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    
     /*====== FLEXBOX ====== */
     display: flex;
-    flex-flow: column nowrap;
+    flex-direction: column;
     justify-content: space-around;
-    align-items: center;
 
 }
 
-.sobreNosotros .textoSobreNosotros p{
+.textoSobreNosotros p{
     font-size: 1.2rem;
     padding-right: 30px;
     padding-left: 30px;
 }
 
-.sobreNosotros .textoSobreNosotros h2{
-  font-size: 2.2rem;
-  margin-top: 20px;
+.textoSobreNosotros h2{
+    font-variant: small-caps;
+    font-size: 2.2rem;
+    margin-top: 20px;
 }
 
-.sobreNosotros .imagenSobreNosotros{
-    width: 50%;
+.imagenSobreNosotros{
+    margin-left: 15px;
+    margin-right: 15px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+.imagenSobreNosotros img{
+    width: 100%;
 }
 
 /* ========================================== */
@@ -147,6 +150,13 @@ a{
     padding: 10px 10px 10px 10px;
 }
 
+.recomendados h3{
+    font-size: 1.8em;
+    color: white;
+    font-weight: bold;
+    padding: 30px 60px 30px 60px;
+}
+
 .r1{
     background-color: rgb(173, 202, 196);
     display: flex;
@@ -156,51 +166,59 @@ a{
     align-items: center;
 }
 
-.r1 h3{
-    color: white;
-    font-weight: bold;
-    padding: 30px 60px 30px 60px;
-    background-color: #5EB0B0;
-}
-
 .r2{
     display: flex;
+    
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
 }
 
-.r2 h3{
-    color: white;
-    font-weight: bold;
-    padding: 30px 60px 30px 60px;
-    background-color: rgb(173, 202, 196);
-}
-
-
 .r3{
     background-color: rgb(173, 202, 196);
     display: flex;
+    
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.r3 h3{
-    color: white;
-    font-weight: bold;
-    padding: 30px 60px 30px 60px;
+.r-title{
+    margin: 15px 15px 15px 15px;
+    
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.r1 .r-title h3{
     background-color: #5EB0B0;
 }
 
-.recomendados img{
-    margin: 30px 30px 30px 30px;
-    height: 250px;
-    width: 400px;
+.r3 .r-title h3{
+    background-color: #5EB0B0;
 }
 
-.recomendados h3{
-    font-size: 2rem;
+.r2 .r-title h3{
+    background-color: rgb(173, 202, 196);
+}
+
+.r-image{
+    margin: 15px 15px 15px 15px;
+    
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.r-image img{
+    width: 450px;
+    height: 300px;
 }
 
 /***********************************************************/
@@ -459,76 +477,65 @@ a{
 /* Tablets */
 @media (max-width:900px){
     
-    /*INDEX*/
-    .bodyIndex{
-        margin: 0;
-        padding: 0;
-    }
+    /*INDEX*/    
 
-    
     .sobreNosotros{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-evenly;
     }
 
-    .sobreNosotros .textoSobreNosotros{
-        width: 100%;    
-    }
-            
-    .sobreNosotros .imagenSobreNosotros{
-        margin: 10px 0px 10px 0px;
-    }
-
-    .recomendados{
-        background-color: rgb(173, 202, 196);
-        text-align: center;
+    .textoSobreNosotros{
+        font-size: 5vw;
+        width: auto;    
     }
     
-    .recomendados h2{
-        background-color: #5EB0B0;
-        width: 100%;
+    .imagenSobreNosotros{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
+
+    .imagenSobreNosotros img{
+        width: 70%;
+    }
+    
 
     .r1{
         flex-direction: column;
-    }
-    
-    .r1 h3{
-        width: 100%;
-        margin-top: 25px;
+        justify-content: space-around;
+        align-items: center;
     }
     
     .r2{
         flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
     }
-    
-    .r2 h3{
-        background-color: #5EB0B0;
-        width: 100%;
-        margin-top: 25px;
-    }
-    
     
     .r3{
         flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
     }
-    
-    .r3 h3{
+            
+    .r-image{
+        margin: 15px 15px 15px 15px;
+        
         width: 100%;
-        margin-top: 25px;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
     }
     
-    .recomendados img{
-        margin: 30px 30px 30px 30px;
-        height: 250px;
-        width: 400px;
+    .r-image img{
+        margin: 15px 15px 15px 15px;
+        width: 70%;
+        height: auto;
     }
-    
-    .recomendados h3{
-        font-size: 2rem;
-    }
-
     /*CONTACTO*/
     .contactosPrincipal{        
         display: flex;
@@ -557,9 +564,24 @@ a{
 
 @media (max-width:700px){
 
+    .recomendados h2{
+        font-variant: small-caps;
+        font-size: 5vw;
+        width: auto;
+        padding: auto;
+    }
+    
+    .recomendados h3{
+        font-size: 5vw;
+        padding: auto;
+    }
+    
+    
     /* HEADER */
     
     .filaUno{
+        font-size: 5vw;
+        width: auto;
         text-align: center;
         flex-direction: column;
         justify-content: center;
@@ -567,10 +589,17 @@ a{
     }
     
     .filaDos{
+        font-size: 5vw;
+        width: auto;
         text-align: center;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .titulo{
+        font-size: 5vw;
+        width: auto;
     }
 }
 
