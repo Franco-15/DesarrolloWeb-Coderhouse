@@ -32,7 +32,6 @@
     object-fit: cover;
 }
 
-
 .menuNavegacion li{
     margin: 10px 15px 10px 15px;
     font-family: 'Times New Roman', Times, serif;
@@ -42,6 +41,7 @@
 
 .botonHamburguesa{
     block-size: 50px;
+    background-color: #5EB0B0;
 }
 
 .titulo{
@@ -147,7 +147,6 @@ a{
 .recomendados h2{
     font-variant: small-caps;
     font-size: 2.2rem;
-    padding: 10px 10px 10px 10px;
 }
 
 .recomendados h3{
@@ -503,6 +502,16 @@ a{
     }
     
 
+    .recomendados h2{
+        font-size: 5vw;
+        width: auto;
+    }
+    
+    .recomendados h3{
+        font-size: 5vw;
+        padding: auto;
+    }
+
     .r1{
         flex-direction: column;
         justify-content: space-around;
@@ -563,23 +572,10 @@ a{
 }
 
 @media (max-width:700px){
-
-    .recomendados h2{
-        font-variant: small-caps;
-        font-size: 5vw;
-        width: auto;
-        padding: auto;
-    }
-    
-    .recomendados h3{
-        font-size: 5vw;
-        padding: auto;
-    }
-    
     
     /* HEADER */
     
-    .filaUno{
+    .filaUno {
         font-size: 5vw;
         width: auto;
         text-align: center;
@@ -615,10 +611,12 @@ a{
 /***********************************************************/
 
 .animacion li{
-    transition: all;
-}
-
-.animacion li:hover{
-    background-color: #b6a598;
-    opacity: 90%;
-}
+    font-size: 15px;
+    padding: 0.5em 1.2em;
+  }
+.animacion li:hover {
+    /* border-color: #563d18e2; */
+    box-shadow: 2px 2px 5px #563d18e2;
+    color: white !important;
+    transition: all 0.2s ease;
+  }
