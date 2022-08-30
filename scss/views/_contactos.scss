@@ -1,0 +1,104 @@
+/*CONTACTO*/
+
+.bodyContacto {
+  background-color: #c2bab4;
+}
+.contactosPrincipal {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+.infoContacto {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  img {
+    width: 20px;
+    height: 20px;
+  }
+  p {
+    margin-bottom: 10px;
+  }
+}
+.redesSociales {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  img {
+    width: 30px;
+    height: 30px;
+  }
+}
+#id-contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  p {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+}
+
+.inputTexto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 30px 0px 30px 0px;
+
+    input{
+        margin: 10px 0px 10px 0px;
+        height: 35px;
+    }
+
+    textarea {
+        height: 150px;
+      }
+  }
+.boton {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    input {
+      padding: 10px 15px 10px 15px;
+    }
+}
+
+
+@media (max-width: 900px) {
+  .contactosPrincipal {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  #id-contacto {
+    width: 90%;
+  }
+
+  .inputTexto{
+
+    input{
+        height: 50px;
+    }
+  }
+  
+  .infoContacto {
+    width: 90%;
+    iframe {
+      width: 90%;
+    }
+  }
+  .boton {
+    flex-direction: column;
+    input{
+        margin: 5px 0px 5px 0px;
+    }
+  }
+}

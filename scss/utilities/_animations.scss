@@ -1,0 +1,17 @@
+.animacion li{
+    font-size: 15px;
+    padding: 0.5em 1.2em;
+  }
+.animacion li:hover {
+    /* border-color: #563d18e2; */
+    box-shadow: 2px 2px 5px #563d18e2;
+    color: white !important;
+    transition: all 0.2s ease;
+  }
+
+.animacion li:active{
+    /* border-color: #563d18e2; */
+    box-shadow: 2px 2px 5px #563d18e2;
+    color: white !important;
+    transition: all 0.2s ease;
+}

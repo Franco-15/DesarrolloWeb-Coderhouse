@@ -1,0 +1,86 @@
+/***********************************************************/
+/*                       FOOTER                            */
+/***********************************************************/
+/***********************************************************/
+/***********************************************************/
+#footer {
+	background-color: #a8e4e4;
+	border: #E5E8E8;
+	font-family: $font;
+	font-size: 1.1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.filaUno {
+	border-bottom: #000 2px solid;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+.logoDireccion {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-end;
+	.titulo {
+		font-size: 1.3rem;
+	}
+	p 
+	{
+		margin: 10px 10px 10px 10px;
+	}
+}
+.seguinos {
+	margin: 10px 10px 10px 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	img {
+		margin-left: 10px;
+		height: 20px;
+		width: 20px;
+	}
+}
+.filaDos {
+	margin: 15px 0px 0px 0px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	p {
+		margin-left: 10px;
+	}
+}
+.logosTarjetas {
+	margin-right: 10px;
+	img {
+		margin-left: 5px;
+		width: 25px;
+		height: 25px;
+	}
+}
+
+/* FOOTER */
+@media (max-width:700px) {
+	.filaUno {
+		font-size: 5vw;
+		width: auto;
+		text-align: center;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.filaDos {
+		font-size: 5vw;
+		width: auto;
+		text-align: center;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.titulo {
+		font-size: 5vw;
+		width: auto;
+	}
+}

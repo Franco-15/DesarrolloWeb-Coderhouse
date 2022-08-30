@@ -1,0 +1,36 @@
+/***********************************************************/
+/*                       HEADER                            */
+/***********************************************************/
+#header {
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.menuNavegacion {
+	li {
+		font-family: $font;
+		font-size: 1.2rem;
+	}
+}
+
+.botonHamburguesa{
+	margin: 10px 15px 10px 15px;
+    width: auto;
+	height: auto;
+    background-color: map-get($map: $colores, $key:fondo_turquesa);
+}
+
+.titulo {
+	font-family: $font;
+	font-weight: bold;
+	font-size: 30px;
+	color: map-get($map: $colores, $key:fondo_turquesa);
+	border: solid 5px map-get($map: $colores, $key:fondo_turquesa);
+	background-color: #563d18e2;
+	padding: 10px 10px 10px 10px;
+	margin: 10px 10px 10px 10px;
+	display: inline-block;
+}
+
+/***********************************************************/
+/***********************************************************/
