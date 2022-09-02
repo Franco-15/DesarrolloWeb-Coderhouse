@@ -1,3 +1,3 @@
 # DesarrolloWeb-Coderhouse
 
-Proyecto Educativo de sitio web de cafe ficticio BILLKS COFFEE
+Proyecto Educativo de sitio web para cafe ficticio llamada "BILLKS COFFEE"
