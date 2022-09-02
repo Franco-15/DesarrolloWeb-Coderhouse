@@ -2,65 +2,69 @@
 /*                       PAGINA MENU                       */
 /***********************************************************/
 .bodyMenu {
-	background-color: #c2bab4;
+  background-color: #c2bab4;
 }
 .menu {
-	margin-top: 50px;
-	margin-bottom: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 .componenteMenu {
-	margin-top: 50px;
-	margin-bottom: 50px;
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: space-around;
-	img {
-		margin-left: 10px;
-		margin-right: 10px;
-		width: 40%;
-        object-fit: cover;
-	}
+  margin-top: 50px;
+  margin-bottom: 50px;
+  @include flex(row, space-around);
+  img {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 40%;
+    object-fit: cover;
+  }
 }
 .tituloMenu {
-    font-family: $font;
-    font-size: 1.5rem;
-    margin-left: 10px;
-	margin-right: 10px;
-	width: 50%;
-	display: flex;
-	flex-direction: column;
-    justify-content: center;
+  font-family: $font;
+  font-size: 1.5rem;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 50%;
+  @include flex(column, center);
 }
 .subtituloMenu {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-
-    h3{
-        font-weight: bold;
-        text-decoration: underline;
-    }
+  @include flex(row, center);
+  h3 {
+    font-weight: bold;
+    text-decoration: underline;
+  }
 }
 .opc {
-	list-style-type: none;
-	display: flex;
-	flex-direction: column;
+  @include flex(column, center);
 }
 .item-descripcion {
-    display: flex;
-	flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+  @include flex(row, space-between);
 
-    p{
-        font-family: $font;
-        font-size: 1.5rem;
-        font-weight: bold;
-        margin: 0 0 0 0;
-    }
+  p {
+    font-family: $font;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 0 0 0;
+  }
 }
 
-.descripcion{
-    font-style: italic;
-    margin-bottom: 20px;
+.descripcion {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 900px) {
+  .componenteMenu {
+    flex-direction: column-reverse;
+    align-items: center;
+    img {
+      width: 90%;
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+
+    .tituloMenu {
+      width: 90%;
+    }
+  }
 }

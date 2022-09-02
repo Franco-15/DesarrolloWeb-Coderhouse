@@ -14,9 +14,7 @@
   margin-top: 100px;
   margin-bottom: 100px;
   background-color: map-get($map: $colores, $key: fondo_turquesa);
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
+  @include flex(row, space-around);
 }
 .textoSobreNosotros {
   width: 100%;
@@ -24,9 +22,8 @@
   margin-left: 15px;
   margin-right: 15px;
   font-family: $font;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  @include flex(column, space-around);
+
   p {
     font-size: 1.2rem;
     padding-right: 30px;
@@ -41,9 +38,7 @@
 .imagenSobreNosotros {
   margin-left: 15px;
   margin-right: 15px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  @include flex(row, center);
   img {
     width: 100%;
   }
@@ -60,9 +55,8 @@ a {
   background-color: map-get($map: $colores, $key: fondo_turquesa);
   margin-top: 100px;
   margin-bottom: 100px;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
+  @include flex(column, center);
+
   h2 {
     font-variant: small-caps;
     font-size: 2.2rem;
@@ -76,9 +70,7 @@ a {
 }
 .r1 {
   background-color: map-get($map: $colores, $key: fondo_celeste_claro);
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  @include flex(row, center);
   align-items: center;
   .r-title {
     h3 {
@@ -87,9 +79,7 @@ a {
   }
 }
 .r2 {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
+  @include flex(row-reverse, center);
   align-items: center;
   .r-title {
     h3 {
@@ -99,9 +89,7 @@ a {
 }
 .r3 {
   background-color: map-get($map: $colores, $key: fondo_celeste_claro);
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  @include flex(row, center);
   align-items: center;
   .r-title {
     h3 {
@@ -113,16 +101,12 @@ a {
   margin: 15px 15px 15px 15px;
   text-align: center;
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  @include flex(row, center);
 }
 .r-image {
   margin: 15px 15px 15px 15px;
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  @include flex(row, center);
   img {
     width: 450px;
     height: 300px;
@@ -132,7 +116,6 @@ a {
 /*=================== MEDIA QUERY ==========================*/
 @media (max-width: 900px) {
   .sobreNosotros {
-    display: flex;
     flex-direction: column;
     justify-content: space-evenly;
   }

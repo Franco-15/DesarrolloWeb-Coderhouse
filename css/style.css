@@ -35,14 +35,14 @@
   margin: 10px 15px 10px 15px;
   width: auto;
   height: auto;
-  background-color: #5EB0B0; }
+  background-color: #5eb0b0; }
 
 .titulo {
   font-family: "Times New Roman", Times, serif;
   font-weight: bold;
   font-size: 30px;
-  color: #5EB0B0;
-  border: solid 5px #5EB0B0;
+  color: #5eb0b0;
+  border: solid 5px #5eb0b0;
   background-color: #563d18e2;
   padding: 10px 10px 10px 10px;
   margin: 10px 10px 10px 10px;
@@ -56,8 +56,8 @@
 /***********************************************************/
 /***********************************************************/
 #footer {
-  background-color: #a8e4e4;
-  border: #E5E8E8;
+  background-color: #adcac4;
+  border: #e5e8e8;
   font-family: "Times New Roman", Times, serif;
   font-size: 1.1rem;
   display: flex;
@@ -143,9 +143,9 @@
   width: 100%;
   margin-top: 100px;
   margin-bottom: 100px;
-  background-color: #5EB0B0;
+  background-color: #5eb0b0;
   display: flex;
-  flex-flow: row nowrap;
+  flex-direction: row;
   justify-content: space-around; }
 
 .textoSobreNosotros {
@@ -183,11 +183,11 @@ a {
 /*=================== RECOMENDADOS ==========================*/
 .recomendados {
   font-family: "Times New Roman", Times, serif;
-  background-color: #5EB0B0;
+  background-color: #5eb0b0;
   margin-top: 100px;
   margin-bottom: 100px;
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   justify-content: center; }
   .recomendados h2 {
     font-variant: small-caps;
@@ -205,7 +205,7 @@ a {
   justify-content: center;
   align-items: center; }
   .r1 .r-title h3 {
-    background-color: #5EB0B0; }
+    background-color: #5eb0b0; }
 
 .r2 {
   display: flex;
@@ -222,7 +222,7 @@ a {
   justify-content: center;
   align-items: center; }
   .r3 .r-title h3 {
-    background-color: #5EB0B0; }
+    background-color: #5eb0b0; }
 
 .r-title {
   margin: 15px 15px 15px 15px;
@@ -245,7 +245,6 @@ a {
 /*=================== MEDIA QUERY ==========================*/
 @media (max-width: 900px) {
   .sobreNosotros {
-    display: flex;
     flex-direction: column;
     justify-content: space-evenly; }
   .textoSobreNosotros {
@@ -302,7 +301,7 @@ a {
   margin-top: 50px;
   margin-bottom: 50px;
   display: flex;
-  flex-flow: row nowrap;
+  flex-direction: row;
   justify-content: space-around; }
   .componenteMenu img {
     margin-left: 10px;
@@ -329,14 +328,13 @@ a {
     text-decoration: underline; }
 
 .opc {
-  list-style-type: none;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  justify-content: center; }
 
 .item-descripcion {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
   justify-content: space-between; }
   .item-descripcion p {
     font-family: "Times New Roman", Times, serif;
@@ -347,6 +345,17 @@ a {
 .descripcion {
   font-style: italic;
   margin-bottom: 20px; }
+
+@media (max-width: 900px) {
+  .componenteMenu {
+    flex-direction: column-reverse;
+    align-items: center; }
+    .componenteMenu img {
+      width: 90%;
+      margin-top: 20px;
+      margin-bottom: 30px; }
+    .componenteMenu .tituloMenu {
+      width: 90%; } }
 
 /***********************************************************/
 /*                       PAGINA CONTACTO                   */
@@ -361,13 +370,11 @@ a {
   margin-right: 10px;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
   justify-content: space-evenly; }
 
 .infoContacto {
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
   justify-content: space-between; }
   .infoContacto img {
     width: 20px;
@@ -405,7 +412,7 @@ a {
 
 .boton {
   display: flex;
-  flex-flow: row nowrap;
+  flex-direction: row;
   justify-content: space-between;
   margin-bottom: 50px; }
   .boton input {
@@ -427,3 +434,24 @@ a {
     flex-direction: column; }
     .boton input {
       margin: 5px 0px 5px 0px; } }
+
+/***********************************************************/
+/*                       TIENDA ONLINE                     */
+/***********************************************************/
+.bodyTienda {
+  background-color: #b6a598; }
+
+.flexCard {
+  display: flex;
+  flex-direction: row; }
+  .flexCard .col {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+    .flexCard .col img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%; }
+    .flexCard .col .card-body {
+      background-color: #adcac4; }

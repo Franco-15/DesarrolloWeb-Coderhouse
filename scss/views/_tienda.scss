@@ -1,0 +1,28 @@
+/***********************************************************/
+/*                       TIENDA ONLINE                     */
+/***********************************************************/
+
+.bodyTienda {
+  background-color: map-get($map: $colores, $key: fondo_body);
+}
+.flexCard {
+  display: flex;
+  flex-direction: row;
+
+  .col {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+
+    .card-body {
+      background-color: map-get($map: $colores, $key: fondo_celeste_claro);
+    }
+  }
+}
