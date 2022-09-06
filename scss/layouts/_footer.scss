@@ -63,15 +63,19 @@
 /* FOOTER */
 @media (max-width: 700px) {
   .filaUno {
-    font-size: 5vw;
+    font-size: 1.4rem;
     width: auto;
     text-align: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    .titulo{
+      font-size: 1.4rem;
+    }
   }
   .filaDos {
-    font-size: 5vw;
+    font-size: 1.4rem;
     width: auto;
     text-align: center;
     flex-direction: column;
@@ -80,6 +84,22 @@
   }
   .titulo {
     font-size: 5vw;
-    width: auto;
+  }
+
+}
+
+@media (max-width: 300px) {
+
+  .logoDireccion{
+    flex-direction: column;
+  }
+  .filaUno{
+    font-size: 1.1rem;
+  }
+  .filaDos{
+    font-size: 1.1rem;
+  }
+  .titulo{
+    font-size: 1.1rem;
   }
 }
