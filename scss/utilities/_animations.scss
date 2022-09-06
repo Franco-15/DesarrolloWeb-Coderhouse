@@ -1,17 +1,31 @@
-.animacion li{
-    font-size: 15px;
-    padding: 0.5em 1.2em;
-  }
-.animacion li:hover {
-    /* border-color: #563d18e2; */
-    box-shadow: 2px 2px 5px #563d18e2;
-    color: white !important;
-    transition: all 0.2s ease;
-  }
+.animacion {
+	li {
+		font-size: 15px;
+		padding: 0.5em 1.2em;
+		&:hover {
+			box-shadow: 2px 2px 5px #563d18e2;
+			transition: all 0.2s ease;
+		}
+		&:active {
+			box-shadow: 2px 2px 5px #563d18e2;
+      background-color: #5b401967;
+			transition: all 0.2s ease;
+		}
+	}
+}
 
-.animacion li:active{
-    /* border-color: #563d18e2; */
-    box-shadow: 2px 2px 5px #563d18e2;
-    color: white !important;
+.animacionSubmit{
+  @extend .animacion;
+  &:hover {
+    box-shadow: 2px 2px 5px green;
     transition: all 0.2s ease;
+  }
+}
+
+.animacionReset{
+  @extend .animacion;
+  &:hover {
+    box-shadow: 2px 2px 5px red;
+    transition: all 0.2s ease;
+  }
 }
