@@ -1,0 +1,4 @@
+Para mejorar el SEO de mi sitio web:
+
+-Compacte las imagenes de todas las paginas
+-Agregue la etiqueta meta description a cada pagina

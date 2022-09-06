@@ -420,7 +420,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-around; }
-  #id-contacto p {
+  #id-contacto h2 {
     font-size: 2rem;
     font-weight: bold; }
 
