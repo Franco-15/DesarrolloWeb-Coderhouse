@@ -4,20 +4,23 @@
   margin: 0;
   padding: 0; }
 
-.animacion li {
+.animacion li, .animacionSubmit li, .animacionReset li {
   font-size: 15px;
   padding: 0.5em 1.2em; }
+  .animacion li:hover, .animacionSubmit li:hover, .animacionReset li:hover {
+    box-shadow: 2px 2px 5px #563d18e2;
+    transition: all 0.2s ease; }
+  .animacion li:active, .animacionSubmit li:active, .animacionReset li:active {
+    box-shadow: 2px 2px 5px #563d18e2;
+    background-color: #5b401967;
+    transition: all 0.2s ease; }
 
-.animacion li:hover {
-  /* border-color: #563d18e2; */
-  box-shadow: 2px 2px 5px #563d18e2;
-  color: white !important;
+.animacionSubmit:hover {
+  box-shadow: 2px 2px 5px green;
   transition: all 0.2s ease; }
 
-.animacion li:active {
-  /* border-color: #563d18e2; */
-  box-shadow: 2px 2px 5px #563d18e2;
-  color: white !important;
+.animacionReset:hover {
+  box-shadow: 2px 2px 5px red;
   transition: all 0.2s ease; }
 
 /***********************************************************/
@@ -109,22 +112,33 @@
 /* FOOTER */
 @media (max-width: 700px) {
   .filaUno {
-    font-size: 5vw;
+    font-size: 1.4rem;
     width: auto;
     text-align: center;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+    .filaUno .titulo {
+      font-size: 1.4rem; }
   .filaDos {
-    font-size: 5vw;
+    font-size: 1.4rem;
     width: auto;
     text-align: center;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
   .titulo {
-    font-size: 5vw;
-    width: auto; } }
+    font-size: 5vw; } }
+
+@media (max-width: 300px) {
+  .logoDireccion {
+    flex-direction: column; }
+  .filaUno {
+    font-size: 1.1rem; }
+  .filaDos {
+    font-size: 1.1rem; }
+  .titulo {
+    font-size: 1.1rem; } }
 
 .carouselHeader img {
   height: 400px;
@@ -140,6 +154,7 @@
 
 /*===========SOBRE NOSOTROS=============*/
 .sobreNosotros {
+  height: 400px;
   width: 100%;
   margin-top: 100px;
   margin-bottom: 100px;
@@ -173,6 +188,7 @@
   flex-direction: row;
   justify-content: center; }
   .imagenSobreNosotros img {
+    object-fit: cover;
     width: 100%; }
 
 a {
@@ -190,6 +206,7 @@ a {
   flex-direction: column;
   justify-content: center; }
   .recomendados h2 {
+    margin-left: 10px;
     font-variant: small-caps;
     font-size: 2.2rem; }
   .recomendados h3 {
@@ -245,6 +262,7 @@ a {
 /*=================== MEDIA QUERY ==========================*/
 @media (max-width: 900px) {
   .sobreNosotros {
+    height: auto;
     flex-direction: column;
     justify-content: space-evenly; }
   .textoSobreNosotros {
@@ -258,12 +276,8 @@ a {
     align-items: center; }
     .imagenSobreNosotros img {
       width: 70%; }
-  .recomendados h2 {
-    font-size: 5vw;
-    width: auto; }
-  .recomendados h3 {
-    font-size: 5vw;
-    padding: auto; }
+  .recomendados {
+    text-align: center; }
   .r1 {
     flex-direction: column;
     justify-content: space-around;
@@ -286,6 +300,17 @@ a {
       margin: 15px 15px 15px 15px;
       width: 70%;
       height: auto; } }
+
+@media (max-width: 500px) {
+  .imagenSobreNosotros img {
+    width: 90%; } }
+
+@media (max-width: 300px) {
+  .recomendados h2 {
+    font-size: 1.8rem; }
+  .recomendados h3 {
+    font-size: 1.2rem;
+    padding: auto; } }
 
 /***********************************************************/
 /*                       PAGINA MENU                       */
