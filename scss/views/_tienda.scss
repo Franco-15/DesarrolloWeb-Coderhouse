@@ -5,24 +5,72 @@
 .bodyTienda {
   background-color: map-get($map: $colores, $key: fondo_body);
 }
-.flexCard {
+
+.col {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 
-  .col {
+  .card {
     display: flex;
-    flex-wrap: wrap;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    flex-direction: column;
+    height: auto;
 
-    img {
-      object-fit: cover;
-      height: 100%;
-      width: 100%;
+    .card-image {
+      height: 50%;
+      img {
+        height: 100%;
+        object-fit: contain;
+      }
     }
 
+    // span{
+    //   &:hover{
+    //   background-color: black;
+    //   }
+    // }
+
     .card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       background-color: map-get($map: $colores, $key: fondo_celeste_claro);
+      height: 50%;
+
+      .card-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 90%;
+
+        .card-desc {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          margin-left: 20px;
+          margin-bottom: 20px;
+          text-align: left;
+          p {
+            margin-bottom: 0;
+          }
+          span {
+            font-weight: bold;
+          }
+        }
+        .card-precio {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          p {
+            margin-bottom: 0;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 500;
+          }
+        }
+      }
     }
   }
 }

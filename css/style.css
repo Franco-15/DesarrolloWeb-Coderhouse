@@ -466,17 +466,49 @@ a {
 .bodyTienda {
   background-color: #b6a598; }
 
-.flexCard {
+.col {
   display: flex;
-  flex-direction: row; }
-  .flexCard .col {
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+  .col .card {
     display: flex;
-    flex-wrap: wrap;
-    margin-top: 10px;
-    margin-bottom: 10px; }
-    .flexCard .col img {
-      object-fit: cover;
-      height: 100%;
-      width: 100%; }
-    .flexCard .col .card-body {
-      background-color: #adcac4; }
+    flex-direction: column;
+    height: auto; }
+    .col .card .card-image {
+      height: 50%; }
+      .col .card .card-image img {
+        height: 100%;
+        object-fit: contain; }
+    .col .card .card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-color: #adcac4;
+      height: 50%; }
+      .col .card .card-body .card-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 90%; }
+        .col .card .card-body .card-text .card-desc {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          margin-left: 20px;
+          margin-bottom: 20px;
+          text-align: left; }
+          .col .card .card-body .card-text .card-desc p {
+            margin-bottom: 0; }
+          .col .card .card-body .card-text .card-desc span {
+            font-weight: bold; }
+        .col .card .card-body .card-text .card-precio {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; }
+          .col .card .card-body .card-text .card-precio p {
+            margin-bottom: 0;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 500; }
