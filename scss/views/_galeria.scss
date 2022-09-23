@@ -4,7 +4,7 @@
 
 .contenido{
     h1{
-        margin-top: 30px;
+        margin-top: 10px;
         text-align: center;
         font-size: 3rem;
         font-family: $font;
@@ -15,17 +15,14 @@
     }
 
     .imgenesGrid{
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
         display: grid;
         grid-template-areas:
-        "caf6 caf14 caf14 caf14"
+        "caf6 caf14 caf14 caf17"
         "caf6 caf4 caf5 caf7"
-        "caf3 caf3 caf3 caf3"
-        "caf15 caf9 caf12 caf11"
-        "caf1 caf1 caf16 caf16"
-        "caf13 caf8 caf16 caf16"
-        "caf10 caf10 caf2 caf2";
+        "caf3 caf3 caf18 caf18";
 
         column-gap: 10px;
         row-gap: 10px;
@@ -35,10 +32,36 @@
             object-fit: cover;
         }
 
-        @for $i from 1 through 16 {
+        @for $i from 1 through 20 {
             .caf#{$i}{
                 grid-area: caf#{$i};
             }
+        }
+    }
+    .carousel{
+        margin: 10px 10px 10px 10px;
+    }
+
+    .galeriaCarousel{
+        height: 600px;    
+        background-image: url(/img/cafeteriaFondo.jpg);
+        background-position: center;
+        img{
+            height: 600px;
+            object-fit: cover;
+            object-position: center; 
+        }
+    }
+}
+
+@media (max-width:700px){
+    .contenido{
+        .imgenesGrid{
+            grid-template-areas:
+            "caf6 caf14"
+            "caf17 caf4"
+            "caf5 caf7"
+            "caf3 caf18"
         }
     }
 }
