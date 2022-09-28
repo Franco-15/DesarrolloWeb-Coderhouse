@@ -21,15 +21,24 @@
         display: grid;
         grid-template-areas:
         "caf6 caf14 caf14 caf17"
-        "caf6 caf4 caf5 caf7"
-        "caf3 caf3 caf18 caf18";
+        "caf13 caf4 caf5 caf7"
+        "caf2 caf1 caf1 caf1"
+        "caf18 caf18 caf3 caf3"
+        "caf8 caf8 caf9 caf9"
+        "caf10 caf19 caf19 caf11"
+        "caf12 caf12 caf20 caf20"
+        "caf15 caf15 caf16 caf16";
 
         column-gap: 10px;
         row-gap: 10px;
         img{
             width: 100%;
-            height: 100%;
+            height: 500px;
             object-fit: cover;
+        }
+        
+        .caf15{
+            object-position:top;
         }
 
         @for $i from 1 through 20 {
@@ -59,9 +68,48 @@
         .imgenesGrid{
             grid-template-areas:
             "caf6 caf14"
-            "caf17 caf4"
+            "caf13 caf4"
             "caf5 caf7"
-            "caf3 caf18"
+            "caf2 caf1"
+            "caf18 caf3"
+            "caf8 caf9"
+            "caf10 caf11"
+            "caf17 caf15"
+            "caf12 caf20"
+            "caf19 caf16";
+        }
+    }
+}
+
+@media (max-width:350px){
+    .contenido{
+        .imgenesGrid{
+            grid-template-areas:
+            "caf6"
+            "caf14"
+            "caf13"
+            "caf4"
+            "caf5"
+            "caf7"
+            "caf2"
+            "caf1"
+            "caf18"
+            "caf3"
+            "caf8"
+            "caf9"
+            "caf10"
+            "caf11"
+            "caf17"
+            "caf15"
+            "caf12"
+            "caf20"
+            "caf19"
+            "caf16";
+        }
+        .imgenesGrid{
+            img{
+                height: 350px;
+            }
         }
     }
 }
