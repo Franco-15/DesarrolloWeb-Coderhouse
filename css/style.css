@@ -171,12 +171,12 @@
   font-family: "Times New Roman", Times, serif;
   display: flex;
   flex-direction: column;
-  justify-content: space-around; }
+  justify-content: center; }
   .textoSobreNosotros p {
     font-size: 1.2rem;
-    padding-right: 30px;
-    padding-left: 30px; }
-  .textoSobreNosotros h2 {
+    margin-right: 100px;
+    margin-left: 100px; }
+  .textoSobreNosotros h1 {
     font-variant: small-caps;
     font-size: 2.2rem;
     margin-top: 20px; }
@@ -208,10 +208,10 @@ a {
   .recomendados h2 {
     margin-left: 10px;
     font-variant: small-caps;
-    font-size: 2.2rem; }
+    font-size: 2.1rem; }
   .recomendados h3 {
     font-size: 1.8em;
-    color: white;
+    color: black;
     font-weight: bold;
     padding: 30px 60px 30px 60px; }
 
@@ -275,7 +275,7 @@ a {
     justify-content: center;
     align-items: center; }
     .imagenSobreNosotros img {
-      width: 70%; }
+      width: 65%; }
   .recomendados {
     text-align: center; }
   .r1 {
@@ -303,7 +303,10 @@ a {
 
 @media (max-width: 500px) {
   .imagenSobreNosotros img {
-    width: 90%; } }
+    width: 80%; }
+  .textoSobreNosotros p {
+    margin-left: 10px;
+    margin-right: 10px; } }
 
 @media (max-width: 300px) {
   .recomendados h2 {
@@ -323,7 +326,6 @@ a {
   display: flex;
   flex-direction: column; }
   .menu h1 {
-    margin-top: 30px;
     text-align: center;
     font-size: 3rem;
     font-family: "Times New Roman", Times, serif;
@@ -396,7 +398,7 @@ a {
 /*                       GALERIA                           */
 /***********************************************************/
 .contenido h1 {
-  margin-top: 30px;
+  margin-top: 10px;
   text-align: center;
   font-size: 3rem;
   font-family: "Times New Roman", Times, serif;
@@ -406,16 +408,19 @@ a {
   text-shadow: 4px 4px #b6a598; }
 
 .contenido .imgenesGrid {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
   display: grid;
-  grid-template-areas: "caf6 caf14 caf14 caf14" "caf6 caf4 caf5 caf7" "caf3 caf3 caf3 caf3" "caf15 caf9 caf12 caf11" "caf1 caf1 caf16 caf16" "caf13 caf8 caf16 caf16" "caf10 caf10 caf2 caf2";
+  grid-template-areas: "caf6 caf14 caf14 caf17" "caf13 caf4 caf5 caf7" "caf2 caf1 caf1 caf1" "caf18 caf18 caf3 caf3" "caf8 caf8 caf9 caf9" "caf10 caf19 caf19 caf11" "caf12 caf12 caf20 caf20" "caf15 caf15 caf16 caf16";
   column-gap: 10px;
   row-gap: 10px; }
   .contenido .imgenesGrid img {
     width: 100%;
-    height: 100%;
+    height: 500px;
     object-fit: cover; }
+  .contenido .imgenesGrid .caf15 {
+    object-position: top; }
   .contenido .imgenesGrid .caf1 {
     grid-area: caf1; }
   .contenido .imgenesGrid .caf2 {
@@ -448,6 +453,36 @@ a {
     grid-area: caf15; }
   .contenido .imgenesGrid .caf16 {
     grid-area: caf16; }
+  .contenido .imgenesGrid .caf17 {
+    grid-area: caf17; }
+  .contenido .imgenesGrid .caf18 {
+    grid-area: caf18; }
+  .contenido .imgenesGrid .caf19 {
+    grid-area: caf19; }
+  .contenido .imgenesGrid .caf20 {
+    grid-area: caf20; }
+
+.contenido .carousel {
+  margin: 10px 10px 10px 10px; }
+
+.contenido .galeriaCarousel {
+  height: 600px;
+  background-image: url(/img/cafeteriaFondo.jpg);
+  background-position: center; }
+  .contenido .galeriaCarousel img {
+    height: 600px;
+    object-fit: cover;
+    object-position: center; }
+
+@media (max-width: 700px) {
+  .contenido .imgenesGrid {
+    grid-template-areas: "caf6 caf14" "caf13 caf4" "caf5 caf7" "caf2 caf1" "caf18 caf3" "caf8 caf9" "caf10 caf11" "caf17 caf15" "caf12 caf20" "caf19 caf16"; } }
+
+@media (max-width: 350px) {
+  .contenido .imgenesGrid {
+    grid-template-areas: "caf6" "caf14" "caf13" "caf4" "caf5" "caf7" "caf2" "caf1" "caf18" "caf3" "caf8" "caf9" "caf10" "caf11" "caf17" "caf15" "caf12" "caf20" "caf19" "caf16"; }
+  .contenido .imgenesGrid img {
+    height: 350px; } }
 
 /***********************************************************/
 /*                       PAGINA CONTACTO                   */
@@ -532,6 +567,20 @@ a {
 /***********************************************************/
 .bodyTienda {
   background-color: #b6a598; }
+
+.tituloTienda h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Times New Roman", Times, serif;
+  text-decoration: underline;
+  background: linear-gradient(to right, #53adaf, #b6a598);
+  color: beige;
+  text-shadow: 4px 4px #b6a598; }
+
+.seccionTienda {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
 
 .col {
   display: flex;
