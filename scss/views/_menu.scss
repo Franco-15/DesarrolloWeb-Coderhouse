@@ -8,14 +8,18 @@
   margin-bottom: 30px;
   display: flex;
   flex-direction: column;
-  h1{
+  h1 {
     text-align: center;
     font-size: 3rem;
     font-family: $font;
     text-decoration: underline;
-    background: linear-gradient(to bottom, rgb(83, 173, 175), map-get($map: $colores, $key: fondo_body));
+    background: linear-gradient(
+      to bottom,
+      rgb(83, 173, 175),
+      map-get($map: $colores, $key: fondo_body)
+    );
     color: beige;
-    text-shadow: 4px 4px map-get($map: $colores, $key: fondo_body);   
+    text-shadow: 4px 4px map-get($map: $colores, $key: fondo_body);
   }
 }
 .componenteMenu {
@@ -75,14 +79,12 @@
       margin-top: 20px;
       margin-bottom: 30px;
     }
-    
-    .seccionMenu{
+
+    .seccionMenu {
       width: 80%;
     }
     .tituloMenu {
       width: 90%;
     }
   }
-
-  
 }
