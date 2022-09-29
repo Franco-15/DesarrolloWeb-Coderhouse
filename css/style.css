@@ -615,6 +615,8 @@ a {
         .col .card .card-image .carouselImage img {
           height: 100%;
           object-fit: contain; }
+    .col .card span:hover {
+      background-color: black; }
     .col .card .card-body {
       display: flex;
       flex-direction: column;
