@@ -16,11 +16,11 @@
     transition: all 0.2s ease; }
 
 .animacionSubmit:hover {
-  box-shadow: 2px 2px 5px green;
+  box-shadow: 2px 2px 5px #84725a;
   transition: all 0.2s ease; }
 
 .animacionReset:hover {
-  box-shadow: 2px 2px 5px red;
+  box-shadow: 2px 2px 5px #84725a;
   transition: all 0.2s ease; }
 
 /***********************************************************/
@@ -513,7 +513,8 @@ a {
   justify-content: space-around; }
   #id-contacto h1 {
     font-size: 2rem;
-    font-weight: bold; }
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif; }
 
 .inputTexto {
   display: flex;

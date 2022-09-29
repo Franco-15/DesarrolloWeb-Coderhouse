@@ -17,7 +17,7 @@
 .animacionSubmit{
   @extend .animacion;
   &:hover {
-    box-shadow: 2px 2px 5px green;
+    box-shadow: 2px 2px 5px rgb(132, 114, 90);
     transition: all 0.2s ease;
   }
 }
@@ -25,7 +25,7 @@
 .animacionReset{
   @extend .animacion;
   &:hover {
-    box-shadow: 2px 2px 5px red;
+    box-shadow: 2px 2px 5px rgb(132, 114, 90);
     transition: all 0.2s ease;
   }
 }
