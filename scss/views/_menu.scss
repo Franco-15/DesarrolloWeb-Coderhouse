@@ -2,7 +2,7 @@
 /*                       PAGINA MENU                       */
 /***********************************************************/
 .bodyMenu {
-  background-color: #c2bab4;
+  background-color: map-get($map: $colores, $key: fondo_body);
 }
 .menu {
   margin-bottom: 30px;
@@ -13,7 +13,7 @@
     font-size: 3rem;
     font-family: $font;
     text-decoration: underline;
-    background: linear-gradient(to right, rgb(83, 173, 175), map-get($map: $colores, $key: fondo_body));
+    background: linear-gradient(to bottom, rgb(83, 173, 175), map-get($map: $colores, $key: fondo_body));
     color: beige;
     text-shadow: 4px 4px map-get($map: $colores, $key: fondo_body);   
   }
@@ -67,14 +67,22 @@
   .componenteMenu {
     flex-direction: column-reverse;
     align-items: center;
+    text-align: start;
+    margin-top: 20px;
+    margin-bottom: 20px;
     img {
       width: 90%;
       margin-top: 20px;
       margin-bottom: 30px;
     }
-
+    
+    .seccionMenu{
+      width: 80%;
+    }
     .tituloMenu {
       width: 90%;
     }
   }
+
+  
 }
