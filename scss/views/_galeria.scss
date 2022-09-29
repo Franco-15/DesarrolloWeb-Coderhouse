@@ -63,25 +63,8 @@
     }
 }
 
-@media (max-width:700px){
-    .contenido{
-        .imgenesGrid{
-            grid-template-areas:
-            "caf6 caf14"
-            "caf13 caf4"
-            "caf5 caf7"
-            "caf2 caf1"
-            "caf18 caf3"
-            "caf8 caf9"
-            "caf10 caf11"
-            "caf17 caf15"
-            "caf12 caf20"
-            "caf19 caf16";
-        }
-    }
-}
 
-@media (max-width:550px){
+@media (max-width:700px){
     .contenido{
         .imgenesGrid{
             grid-template-areas:
