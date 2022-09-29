@@ -51,22 +51,9 @@
       }
     }
   }
-  .carousel {
-    margin: 10px 10px 10px 10px;
-  }
-
-  .galeriaCarousel {
-    height: 600px;
-    background-image: url(/img/cafeteriaFondo.jpg);
-    background-position: center;
-    img {
-      height: 600px;
-      object-fit: cover;
-      object-position: center;
-    }
-  }
 }
 
+/* MEDIA QUERY */
 @media (max-width: 700px) {
   .contenido {
     .imgenesGrid {

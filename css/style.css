@@ -469,18 +469,7 @@ a {
   .contenido .imgenesGrid .caf20 {
     grid-area: caf20; }
 
-.contenido .carousel {
-  margin: 10px 10px 10px 10px; }
-
-.contenido .galeriaCarousel {
-  height: 600px;
-  background-image: url(/img/cafeteriaFondo.jpg);
-  background-position: center; }
-  .contenido .galeriaCarousel img {
-    height: 600px;
-    object-fit: cover;
-    object-position: center; }
-
+/* MEDIA QUERY */
 @media (max-width: 700px) {
   .contenido .imgenesGrid {
     grid-template-areas: "caf6" "caf14" "caf13" "caf4" "caf5" "caf7" "caf2" "caf1" "caf18" "caf3" "caf8" "caf9" "caf10" "caf11" "caf17" "caf15" "caf12" "caf20" "caf19" "caf16"; }
@@ -644,6 +633,7 @@ a {
       .col .card .card-body .btn {
         margin: 5px 5px 5px 5px; }
 
+/*MEDIA QUERY*/
 @media (max-width: 350px) {
   .seccionTienda .subtituloTienda h2 {
     font-size: 2rem;
