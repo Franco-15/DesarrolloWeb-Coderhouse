@@ -357,33 +357,30 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center; }
-
-.tituloSeccion {
-  display: flex;
-  flex-direction: row;
-  justify-content: center; }
-  .tituloSeccion h3 {
-    font-weight: bold;
-    text-decoration: underline; }
-
-.opc {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-
-.item-descripcion {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
-  .item-descripcion p {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin: 0 0 0 0; }
-
-.descripcion {
-  font-style: italic;
-  margin-bottom: 20px; }
+  .seccionMenu .tituloSeccion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    .seccionMenu .tituloSeccion h3 {
+      font-weight: bold;
+      text-decoration: underline; }
+  .seccionMenu .opc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .seccionMenu .opc .descripcion {
+      font-style: italic;
+      margin-bottom: 20px; }
+  .seccionMenu .item-descripcion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 10px 10px 10px; }
+    .seccionMenu .item-descripcion p {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 0 0 0 0; }
 
 @media (max-width: 900px) {
   .componenteMenu {
